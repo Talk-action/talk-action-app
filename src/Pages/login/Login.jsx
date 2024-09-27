@@ -3,6 +3,7 @@ import logo from '../../assets/logo.png'
 import gmail from '../../assets/gmail.jpg'
 import facebook from '../../assets/facebook-13.png'
 import insta from '../../assets/insta.png'
+import { Link } from 'react-router-dom'
 
 
 function Login () {
@@ -24,8 +25,9 @@ function Login () {
                            
                             <button className={style.button}>Entrar</button>
                         </form>
-                        
-                            <p>Não tem conta?<strong> Cadastre-se</strong></p>
+                            <Link to={'/cadastro'}>
+                                <p>Não tem conta?<strong> Cadastre-se</strong></p>
+                            </Link>
                             <div className={style.containerRegistro}>
                                 <div className={style.border}></div>
 
