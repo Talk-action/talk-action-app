@@ -1,0 +1,19 @@
+.container{
+    background-color: #FFB342;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img{
+    width: 6vw;
+    margin-left: 100px;
+}
+
+.navigate{
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
