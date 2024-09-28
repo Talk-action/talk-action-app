@@ -21,12 +21,12 @@ function Login () {
     return(
         <div className={style.container}>
             <section className={style.login}>
-               
+            
                 <div className={style.loginName}>
 
                     <p className={style.p}>Login</p>
                 </div>   
-               <div className={style.containerLogin}> 
+                <div className={style.containerLogin}> 
                     <div>
                         <div className={style.containerLogin}>
                         <form onSubmit={handleSubmit}className={style.buttonForms}>
@@ -55,7 +55,7 @@ function Login () {
 
                                 <div className={style.border}></div>
 
-                              
+                            
                             </div>
                             <div className={style.containerImg}>
                                     <img className={style.img} src={gmail}/>
@@ -68,13 +68,13 @@ function Login () {
                     </div>
 
                     
-               </div>
+            </div>
 
 
             </section>
 
             <section className={style.logo}>
-                 <img src={logo} className={style.imagem}/>
+                <img src={logo} className={style.imagem}/>
             </section>
         </div>
     )
