@@ -4,9 +4,19 @@ import gmail from '../../assets/gmail.jpg'
 import facebook from '../../assets/facebook-13.png'
 import insta from '../../assets/insta.png'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 
 function Login () {
+    const [email , setEmail] = useState("")
+    const [senha , setSenha] = useState("")
+
+    const handleSubmit = () =>{
+        event.preventDefault();
+        console.log("Email" , email)
+        console.log("Senha" , senha)
+
+    }
 
     return(
         <div className={style.container}>
@@ -19,13 +29,23 @@ function Login () {
                 <div className={style.containerLogin}> 
                     <div>
                         <div className={style.containerLogin}>
-                        <form className={style.buttonForms}>
-                            <input className={style.input} type='email' placeholder='Email' required/>
-                            <input className={style.input} type='password' placeholder='Senha' required/>
-                        
-                            <button className={style.button}>Entrar</button>
+                        <form onSubmit={handleSubmit}className={style.buttonForms}>
+                            <input
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value) }
+                            type='email'
+                             className={style.input} placeholder='Email'/>
+
+                            <input 
+                            value={senha}
+                            onChange={(e) => setSenha(e.target.value) }
+                            type='password'
+
+                            className={style.input}placeholder='Senha'/>
+                           
+                            <button type='submit' className={style.button}>Entrar</button>
                         </form>
-                            <Link to={'/cadastro'}>
+                            <Link className={style.link}to={'/cadastro'}>
                                 <p>Não tem conta?<strong> Cadastre-se</strong></p>
                             </Link>
                             <div className={style.containerRegistro}>

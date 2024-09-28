@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-
 .container{
-    background-color: #FFB342;
+    background-color:  #F68C2A;
     width: 100vw;
     height: 100vh;
     display: flex;
-
 }
 
 .cadastro{
@@ -19,41 +17,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
-.Name{
+.loginName{
     width: 50%;
-    height: 30%;
+    height: 10%;
     display: flex;
     align-items: end;
-    background-color: aqua;
 }
 
+
 .p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-.containercadastro{
+
+
+.caixaCadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     width: 25vw;
-    height: 60vh;
+    height: 50vh;
     border-radius: 10px;
-    
+
 }
 
-.containerForms{
-    height: 100%;
+.form{
     width: 100%;
-}
-
-.buttonForms{
-    /* background-color: rebeccapurple; */
-    width: 100%;
-    height: 50%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -62,11 +55,10 @@
 }
 
 .input{
-    height: 20%;
+    height: 10%;
     width: 70%;
     margin-bottom: 10px;
     border-radius: 10px;
-    
 }
 
 .button{
@@ -81,29 +73,11 @@
     color: white;
 }
 
-.containerRegistro{
-    width: 100%;
-    height: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.line{
+    border: 1px solid black;
+    width: 90%;
     margin-top: 30px;
-    padding: 10px;
-
 }
-
-.containerRegistro>p{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
-.border{
-    border: 1px solid #A4A4A4;
-    width: 40%;
-    margin-top: 10px;
-}
-
 
 .logo{
     width: 50vw;
@@ -112,6 +86,6 @@
     justify-content: center;
 }
 
-.imagem{
+.img{
     width: 40vw;
 }
