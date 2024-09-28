@@ -80,6 +80,11 @@
     color: white;
 }
 
+.link{
+    text-decoration: none;
+    color: black;
+}
+
 .containerRegistro{
     width: 100%;
     height: 5%;
