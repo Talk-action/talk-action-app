@@ -6,9 +6,14 @@ function Cadastro () {
     const [email , setEmail] = useState("")
     const [senha , setSenha] = useState("")
     const [repetirS , setRepetirS] = useState("")
+    const [nome , setNome] = useState("")
+    const [sobrenome , setSobrenome] = useState("")
+
 
     const handleSubmit = () =>{
         event.preventDefault();
+        console.log("Nome" , nome)
+        console.log("Sobrenome" , sobrenome)
         console.log("Email" , email)
         console.log("Senha" , senha)
         console.log("Senha" , repetirS)
@@ -29,6 +34,17 @@ function Cadastro () {
                 </div>
                 <div className={style.caixaCadastro}>
                     <form onSubmit={handleSubmit}className={style.form}>
+                        <input 
+                         value={nome}
+                         onChange={(e) => setNome(e.target.value) }
+                         className={style.input} placeholder='Nome'/>
+
+                        <input 
+                         value={sobrenome}
+                         onChange={(e) => setSobrenome(e.target.value) }
+                         className={style.input} placeholder='Sobrenome'/>
+
+
                         <input 
                          value={email}
                          onChange={(e) => setEmail(e.target.value) }
