@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+    background-color: #FFCD82;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerLetra {
+    display: inline-block; /* Para que cada letra ocupe apenas o espaço necessário */
+    margin: 10px; /* Margem entre as letras */
+    cursor: pointer; /* Indica que a letra é clicável */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de destaque */
+}
+
+.highlight {
+    z-index: 1; /* Leva a letra para primeiro plano */
+    transform: scale(1.2); /* Aumenta o tamanho da letra para destaque */
+}
+
+.image {
+    position: fixed; /* Mantém a imagem fixa na tela */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Move a imagem para o centro */
+    max-width: 80%; /* Limita a largura da imagem */
+    max-height: 80%; /* Limita a altura da imagem */
+    z-index: 10; /* Garante que a imagem fique em cima de tudo */
+}
+
+.background {
+    position: fixed; /* Mantém o fundo em posição fixa */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura com opacidade */
+    z-index: 5; /* Fundo atrás da imagem */
+    pointer-events: auto; /* Permite clicar no fundo para fechá-lo */
+}
