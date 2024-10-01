@@ -1,4 +1,5 @@
 import { createContext, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const AplicacaoContext = createContext();
 
@@ -9,6 +10,7 @@ export const AplicaçãoProvider = ({ children }) => {
   const [campoTexto, setCampoTexto] = useState(false);
   const [palavraDigitada, setPalavraDigitada] = useState('');
   const [palavra, setPalavra] = useState(''); // Palavra inicial a ser usada
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (palavra && indice < palavra.length) {
@@ -28,9 +30,11 @@ export const AplicaçãoProvider = ({ children }) => {
     if (palavraDigitada.toUpperCase() === palavra.toUpperCase()) {
       alert("Parabéns, palavra correta! Continue com os estudos.");
       navigate("/home");
+      window.location.reload()
     } else {
       alert("Não foi dessa vez, tente novamente.");
       navigate("/home");
+      window.location.reload()
     }
   };
 
@@ -43,6 +47,7 @@ export const AplicaçãoProvider = ({ children }) => {
       alert("Letra incorreta. Escolha outra")
       if (vidas === 0) {
         navigate("/home");
+        objeto.reload(forcedReload)
       }
     }
   };
