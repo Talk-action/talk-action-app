@@ -3,16 +3,22 @@ import logo from '../../assets/logo.png'
 import gmail from '../../assets/gmail.jpg'
 import facebook from '../../assets/facebook-13.png'
 import insta from '../../assets/insta.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 
 function Login () {
     const [email , setEmail] = useState("")
     const [senha , setSenha] = useState("")
-
+    const navigate = useNavigate()
+    
     const handleSubmit = () =>{
         event.preventDefault();
+
+        if(email === "talkaction@gmail.com" && senha === '123456'){
+            navigate('/home')
+        }
+        
         console.log("Email" , email)
         console.log("Senha" , senha)
 

@@ -5,7 +5,7 @@ export const AplicacaoContext = createContext();
 
 export const AplicaçãoProvider = ({ children }) => {
   const [vidas, setVidas] = useState(5);
-  const [indice, setIndice] = useState(0);
+  let [indice, setIndice] = useState(0);
   const [letraAtual, setLetraAtual] = useState('');
   const [campoTexto, setCampoTexto] = useState(false);
   const [palavraDigitada, setPalavraDigitada] = useState('');
@@ -18,6 +18,7 @@ export const AplicaçãoProvider = ({ children }) => {
       setLetraAtual(letra); // Define a letra atual com base no índice
     } else if (palavra && indice >= palavra.length) {
       setLetraAtual(''); // Quando todas as letras forem exibidas, reseta a letra
+      setIndice(0)
       setCampoTexto(true); // Exibe o campo de texto somente quando todas as letras foram mostradas
     }
   }, [indice, palavra]);
@@ -52,6 +53,18 @@ export const AplicaçãoProvider = ({ children }) => {
     }
   };
 
+  const handleLoopImage = (item) => {
+    if (indice < item.length) {
+      console.log(item[indice]);
+      const nextIndex = indice + 1; // Armazena o próximo índice
+
+      setTimeout(() => {
+        setIndice(nextIndex); // Atualiza o índice para o próximo
+      }, 1000);
+    }
+  };
+
+
   return (
     <AplicacaoContext.Provider
       value={{
@@ -67,6 +80,7 @@ export const AplicaçãoProvider = ({ children }) => {
         handlePalavra,
         validaPalavra,
         handleLetra,
+        handleLoopImage,
       }}
     >
       {children}
