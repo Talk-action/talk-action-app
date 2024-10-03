@@ -1,5 +1,5 @@
 .containerPrincipal {
-    background-color: #FFCD82;
+    background-color: #87CEFF   ;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -42,12 +42,13 @@
     padding: 10px;
     width: 50%; /* A largura ocupa todo o espaço do container */
     border-radius: 20px;
+    font-size: 1.2em;
 }
 
 .highlight {
     z-index: 1; /* Leva a letra para primeiro plano */
-    transform: scale(1.2); /* Aumenta o tamanho da letra para destaque */
-    background-color: #FFB342;
+    transform: scale(1); /* Aumenta o tamanho da letra para destaque */
+    background-color: #1E90FF;;
     
 }
 

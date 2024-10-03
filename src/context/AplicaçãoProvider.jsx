@@ -23,6 +23,9 @@ export const AplicaçãoProvider = ({ children }) => {
     }
   }, [indice, palavra]);
 
+
+  
+
   const handlePalavra = (e) => {
     setPalavraDigitada(e.target.value);
   };

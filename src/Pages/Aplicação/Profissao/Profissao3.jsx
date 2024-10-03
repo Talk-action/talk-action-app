@@ -6,13 +6,21 @@ import { AplicacaoContext } from "../../../context/AplicaçãoProvider";
 import { useNavigate } from "react-router-dom";
 
 function Profissao3({ palavraProp}) { // Recebe a palavra "Homem" como padrão
-  const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, vidas } = useContext(AplicacaoContext);
+  const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, indice, handleLoopImage} = useContext(AplicacaoContext);
   const navigate = useNavigate();
 
   // Define a palavra no estado global ao carregar o componente
   useEffect(() => {
     setPalavra(palavraProp); // Define a palavra "Homem" no estado do contexto
   }, [palavraProp]);
+
+  useEffect(() => {
+    if(campoTexto === true){
+      handleLoopImage(palavraProp);
+
+    }
+  },  [indice]); // Adiciona 'indice' como dependência
+
 
   return (
     <div className={style.container}>
@@ -30,7 +38,7 @@ function Profissao3({ palavraProp}) { // Recebe a palavra "Homem" como padrão
           </div>
         </div>
 
-        <div className={style.containerResp}>
+        <div className={`${style.containerResp} ${campoTexto === true ? style.none : style.containerResp}`}>
           <h1>Resposta</h1>
           {/* Exemplo de letras que o usuário deve clicar para avançar */}
           <p className={style.resposta} onClick={() => handleLetra('I')}>I</p>
@@ -39,10 +47,11 @@ function Profissao3({ palavraProp}) { // Recebe a palavra "Homem" como padrão
           <p className={style.resposta} onClick={() => handleLetra('I')}>I</p>
           <p className={style.resposta} onClick={() => handleLetra('S')}>S</p>
           <p className={style.resposta} onClick={() => handleLetra('O')}>O</p>
+          </div>
 
 
 
-
+          <div>       
           {/* Campo de texto só aparece quando todas as letras foram mostradas */}
           {campoTexto && (
             <div>
@@ -52,8 +61,8 @@ function Profissao3({ palavraProp}) { // Recebe a palavra "Homem" como padrão
             </div>
           )}
         </div>
+        </div>
       </div>
-    </div>
   );
 }
 

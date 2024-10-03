@@ -1,5 +1,5 @@
 .container{
-    background-color: #FFB342;
+    background-color: #1E90FF;
     height: 8vh;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
 }
 
 .img{
-    width: 6vw;
+    width: 5vw;
     margin-left: 100px;
 }
 
@@ -16,4 +16,5 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 10px;
 }
