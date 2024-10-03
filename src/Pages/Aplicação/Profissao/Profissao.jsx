@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import Header from "../../header/Header";
-import data from '../../../data/letras';
+import data from '../../../../public/data/letras';
 import style from '../../Aplicação/Aplicacao.module.css';
 import { AplicacaoContext } from "../../../context/AplicaçãoProvider";
 import { useNavigate } from "react-router-dom";

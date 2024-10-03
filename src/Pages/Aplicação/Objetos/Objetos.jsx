@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import Header from "../../header/Header";
-import data from '../../../data/letras';
+import data from '../../../../public/data/letras';
 import style from '../../Aplicação/Aplicacao.module.css';
 import { AplicacaoContext } from "../../../context/AplicaçãoProvider";
-import { useNavigate } from "react-router-dom";
+
 
 function Objetos({ palavraProp}) { // Recebe a palavra "Homem" como padrão
   const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, handleLoopImage, indice} = useContext(AplicacaoContext);
