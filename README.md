@@ -4,10 +4,6 @@
 
 # https://talk-action-app.vercel.app/
 
-
-
-# Link do Behance
-
 # Sobre o Projeto
 Talk-Action é um aplicativo inovador projetado para tornar o aprendizado da Língua Brasileira de Sinais (Libras) acessível e envolvente para todos. Com uma interface intuitiva e recursos interativos, nosso aplicativo oferece uma abordagem prática e eficiente para aprender sinais básicos, frases úteis e a cultura surda.
 
@@ -33,9 +29,9 @@ vercel
 
  -Gabriel dos Santos: https://github.com/Gabriel3090 (Produziu o README e editou o codigo)
  
- -Gabriel Pereira: https://github.com/Drymer-gabriel (Colaborou com a Pesquisa)
+ -Gabriel Pereira: https://github.com/Drymer-gabriel (Colaborou com a Pesquisa e o Desig)
  
- -Julia Vitória: https://github.com/Julia-vfs (Colaborou com a engenharia de requisitos)
+ -Julia Vitória: https://github.com/Julia-vfs (Colaborou com o codigo)
  
  -Dickson Freitas: https://github.com/Dickfreitas (Produziu o código do projeto)
  
