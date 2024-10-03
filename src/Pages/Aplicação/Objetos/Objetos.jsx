@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 function Objetos({ palavraProp}) { // Recebe a palavra "Homem" como padrão
   const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, handleLoopImage, indice} = useContext(AplicacaoContext);
-  const navigate = useNavigate();
 
   // Define a palavra no estado global ao carregar o componente
   useEffect(() => {
@@ -47,13 +46,16 @@ function Objetos({ palavraProp}) { // Recebe a palavra "Homem" como padrão
           <p className={style.resposta} onClick={() => handleLetra('E')}>E</p>
         </div>
 
-        <div>       
+        <div className={style.containerInput}>       
           {/* Campo de texto só aparece quando todas as letras foram mostradas */}
           {campoTexto && (
-            <div>
+            <div  >
               <h2>Digite a palavra correta</h2>
-              <input type="text" onChange={handlePalavra} value={palavraDigitada} />
-              <button onClick={() => validaPalavra(navigate)}>Validar</button>
+              <input className={style.input} type="text" onChange={handlePalavra} value={palavraDigitada} />
+              <div>
+                <button className={style.button}onClick={() => validaPalavra()}>Validar</button>
+              </div>
+             
             </div>
           )}
         </div>

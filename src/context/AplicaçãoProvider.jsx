@@ -6,6 +6,7 @@ export const AplicacaoContext = createContext();
 export const AplicaçãoProvider = ({ children }) => {
   const [vidas, setVidas] = useState(5);
   let [indice, setIndice] = useState(0);
+  const [progress, setProgress] = useState(0);
   const [letraAtual, setLetraAtual] = useState('');
   const [campoTexto, setCampoTexto] = useState(false);
   const [palavraDigitada, setPalavraDigitada] = useState('');
@@ -30,9 +31,10 @@ export const AplicaçãoProvider = ({ children }) => {
     setPalavraDigitada(e.target.value);
   };
 
-  const validaPalavra = (navigate) => {
+  const validaPalavra = () => {
     if (palavraDigitada.toUpperCase() === palavra.toUpperCase()) {
       alert("Parabéns, palavra correta! Continue com os estudos.");
+      // Atualizando o progresso de forma acumulativa
       navigate("/home");
       window.location.reload()
     } else {
@@ -44,17 +46,21 @@ export const AplicaçãoProvider = ({ children }) => {
 
   const handleLetra = (letra) => {
     if (letra === letraAtual) {
-      setIndice(indice + 1); // Avança para a próxima letra
-      alert("Letra Correta")
+      setIndice(indice + 1);
+      alert("Letra Correta");
+      setProgress(prevProgress => Math.min(prevProgress + 2, 100));
+      console.log(progress)
     } else {
-      setVidas(vidas - 1);
-      alert("Letra incorreta. Escolha outra")
-      if (vidas === 0) {
+      if (vidas > 1) {
+        setVidas(vidas - 1);
+        alert("Letra incorreta. Escolha outra");
+      } else {
+        alert("Game Over");
         navigate("/home");
-        objeto.reload(forcedReload)
       }
     }
   };
+  
 
   const handleLoopImage = (item) => {
     if (indice < item.length) {
@@ -79,6 +85,8 @@ export const AplicaçãoProvider = ({ children }) => {
         campoTexto,
         palavraDigitada,
         palavra,
+        progress, 
+        setProgress,
         setPalavra,
         handlePalavra,
         validaPalavra,

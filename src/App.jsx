@@ -5,13 +5,12 @@ import Principal from './Pages/Principal/Principal';
 import { AplicaçãoProvider } from './context/AplicaçãoProvider';
 import Alfabeto from './Pages/Aplicação/Alfabeto/Alfabeto';
 import Objetos from './Pages/Aplicação/Objetos/Objetos';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Objetos2 from './Pages/Aplicação/Objetos/Objetos2';
 import Objetos3 from './Pages/Aplicação/Objetos/Objetos3';
 import Profissao from './Pages/Aplicação/Profissao/Profissao';
 import Profissao2 from './Pages/Aplicação/Profissao/Profissao2';
 import Profissao3 from './Pages/Aplicação/Profissao/Profissao3';
+import Progresso from './Progresso/Progresso';
 
 function App() {
   return (
@@ -23,6 +22,8 @@ function App() {
             <Route path="/cadastro" element={<Cadastro />} /> {/* Rota para a página de cadastro */}
             <Route path="/home" element={<Principal />} /> {/* Rota para a página principal */}
             <Route path="/alfabeto" element={<Alfabeto />} /> {/* Rota para a página de alfabetos */}
+            <Route path="/progresso" element={<Progresso />} /> {/* Rota para a página de alfabetos */}
+
             <Route path="/objetos" element={<Objetos palavraProp={'HOMEM'}/>} /> {/* Rota para a página de objetos com prop */}
 
             <Route path="/objetos/2" element={<Objetos2 palavraProp={'BOLA'}/>} /> {/* Rota para a página de objetos com prop */}

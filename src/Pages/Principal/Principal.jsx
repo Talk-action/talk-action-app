@@ -6,6 +6,7 @@ import wallpaper from '../../assets/alfabeto.avif';
 import att from '../../assets/att.png';
 import coracao from '../../assets/coracao.png';
 import { Link, useNavigate } from 'react-router-dom';
+import Progresso from '../../components/ProgressCircle';
 
 function Principal() {
     const { vidas } = useContext(AplicacaoContext);
@@ -60,9 +61,15 @@ function Principal() {
                         <option value="/profissao/3">Profissao 3</option>
                     </select>
                 </div>
+
+
+                
             </section>
         </div>
     );
 }
+
+
+
 
 export default Principal;
