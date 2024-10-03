@@ -14,13 +14,14 @@ function Objetos({ palavraProp}) { // Recebe a palavra "Homem" como padrão
     setPalavra(palavraProp); // Define a palavra "Homem" no estado do contexto
   }, [palavraProp]);
 
-  
   useEffect(() => {
     if(campoTexto === true){
       handleLoopImage(palavraProp);
 
     }
   },  [indice]); // Adiciona 'indice' como dependência
+
+  
   return (
     <div className={style.container}>
       <Header />

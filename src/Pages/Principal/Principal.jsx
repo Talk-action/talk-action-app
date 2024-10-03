@@ -23,26 +23,26 @@ function Principal() {
             <Header />
             <section className={style.containerUser}>
                 <div className={style.circulo}></div>
-                <div><p>Nome de usuario</p></div>
+                <div><p>Joao Talk</p></div>
                 <div><p>Vidas: {vidas}</p></div>
             </section>
 
             <section className={style.containerAlfabeto}>
+            <Link className={style.link} to='/alfabeto'>            
                 <p>Alfabeto</p>
                 <div className={style.alfabeto}>
-                    <Link className={style.link} to='/alfabeto'>            
                         <div className={style.letras}>
                             <img className={style.img} src={wallpaper} alt="Alfabeto" />
                             <p>Letras</p>
                         </div>
-                    </Link>
+                  
 
                     <div className={style.letras}>
-                        <img className={style.coracao} src={coracao} alt="Coração" />
+                        <img className={style.coracao} src={"https://media.discordapp.net/attachments/1280214314799730761/1291231122990301214/coracao.png?ex=66ff5831&is=66fe06b1&hm=73e804bd832b01c97c6438d5a2996772d42be89ec98335005ff8fc69baa23490&=&format=webp&quality=lossless&width=468&height=468"} alt="Coração" />
                         <p>{vidas}/5</p>
                     </div>
                 </div>
-
+            </Link>
                 <p>Lições</p>
 
                 <div className={style.teste1}>

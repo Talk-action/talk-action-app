@@ -1,5 +1,5 @@
 .containerUser{
-    background-color: #FFCD82;
+    background-color: #87CEFF;
     width: 100vw;
     height: 10vw;
     display: flex;
@@ -27,7 +27,7 @@
 }
 
 .alfabeto{
-    background-color: #FFCD82;
+    background-color: #87CEFF;;
     width: 40vw;
     height: 12vh;
     margin-top: 20px;
@@ -54,17 +54,17 @@
 
 .letras>p{
     margin-left: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .img{
-    width: 5vw;
+    width: 4vw;
     height: 10vh;
     border-radius: 100px;
 }
 
 .coracao{
-    width: 40px;
+    width: 30px;
 }
 
 .teste1{
@@ -74,35 +74,11 @@
 }
 
 .select{
-    height: 7vh;
+    height: 8vh;
     width: 100%;
-    background-color: rebeccapurple;
-    color: white;
-}
-
-.accordionBody{
-    background-color: #FFCD82;
-    height: 50px;
-}
-
-
-/* Principal.module.css */
-
-/* Classe para o botão do Accordion */
-.accordionButton {
-    background-color: #FFCD82; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: 1px solid black; /* Remove bordas, se necessário */
-    transition: background-color 0.3s; /* Adiciona uma transição suave */
-}
-
-/* Estilo para o hover do botão */
-.accordionButton:hover {
-    background-color: #FFC44E; /* Uma cor mais clara ou escura ao passar o mouse */
-}
-
-/* Estilo para o botão ativo */
-.accordionButton:focus {
-    background-color: #FFC44E; /* Mantém a cor ao focar no botão */
-    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5); /* Adiciona um leve efeito de sombra ao focar */
+    background-color: #87CEFF;
+    color: black;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    
 }

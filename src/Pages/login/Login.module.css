@@ -6,7 +6,7 @@
 
 
 .container{
-   background-color: #FFB342;
+   background-color: #1E90FF;
    width: 100vw;
    height: 100vh;
    display: flex;
@@ -69,7 +69,7 @@
 }
 
 .button{
-    background-color: #F68C2A;
+    background-color: #87CEFF;
     border-style: none;
     width: 70px;
     height: 40px;
@@ -77,7 +77,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
 }
 
 .link{
