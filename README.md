@@ -1,8 +1,47 @@
-# React + Vite
+# Site do APP do Talk-Action
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Disciplina [FRONT-END FRAMEWORK] - Professor [Dr.Sávio Silva de Almeida] - Instituto: UNINASSAU
 
-Currently, two official plugins are available:
+# https://talk-action-app.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+# Link do Behance
+
+# Sobre o Projeto
+Talk-Action é um aplicativo inovador projetado para tornar o aprendizado da Língua Brasileira de Sinais (Libras) acessível e envolvente para todos. Com uma interface intuitiva e recursos interativos, nosso aplicativo oferece uma abordagem prática e eficiente para aprender sinais básicos, frases úteis e a cultura surda.
+
+# Construido por
+
+React.js
+
+Node.js
+
+CSS3
+
+Javascipt
+
+HTML5
+
+VsCode
+
+Vite
+
+vercel
+
+# Colaboradores:
+
+ -Gabriel dos Santos: https://github.com/Gabriel3090 (Produziu o README e editou o codigo)
+ 
+ -Gabriel Pereira: https://github.com/Drymer-gabriel (Colaborou com a Pesquisa)
+ 
+ -Julia Vitória: https://github.com/Julia-vfs (Colaborou com a engenharia de requisitos)
+ 
+ -Dickson Freitas: https://github.com/Dickfreitas (Produziu o código do projeto)
+ 
+ -Almir Francisco: https://github.com/almirjunior12 (Colaborou com o Design)
+ 
+ -Alyson Medeiros: https://github.com/AlysonMLL (Colaborou com o Design)
+ 
+ -Julio Cesar: https://github.com/jullio007?tab=repositories (Colaborou com Github)
+ 
