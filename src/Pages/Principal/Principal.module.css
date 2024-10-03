@@ -68,10 +68,16 @@
 }
 
 .teste1{
-    border: 1px solid black;
     width: 40vw;
     display: absolute;
     margin-top: 20px;
+}
+
+.select{
+    height: 7vh;
+    width: 100%;
+    background-color: rebeccapurple;
+    color: white;
 }
 
 .accordionBody{
