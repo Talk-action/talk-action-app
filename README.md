@@ -29,7 +29,7 @@ vercel
 
  -Gabriel dos Santos: https://github.com/Gabriel3090 (Produziu o README e editou o codigo)
  
- -Gabriel Pereira: https://github.com/Drymer-gabriel (Colaborou com a Pesquisa e o Desig)
+ -Gabriel Pereira: https://github.com/Drymer-gabriel (Colaborou com a Pesquisa e o Design)
  
  -Julia Vitória: https://github.com/Julia-vfs (Colaborou com o codigo)
  
@@ -39,5 +39,5 @@ vercel
  
  -Alyson Medeiros: https://github.com/AlysonMLL (Colaborou com o Design)
  
- -Julio Cesar: https://github.com/jullio007?tab=repositories (Colaborou com Github)
+ -Julio Cesar: https://github.com/jullio007?tab=repositories (Colaborou com Github e a gravação)
  
