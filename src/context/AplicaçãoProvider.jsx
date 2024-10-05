@@ -6,13 +6,13 @@ export const AplicacaoContext = createContext();
 export const AplicaçãoProvider = ({ children }) => {
   const [vidas, setVidas] = useState(5);
   let [indice, setIndice] = useState(0);
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(0); // Inicializando progress como 0
   const [letraAtual, setLetraAtual] = useState('');
   const [campoTexto, setCampoTexto] = useState(false);
   const [palavraDigitada, setPalavraDigitada] = useState('');
   const [palavra, setPalavra] = useState(''); // Palavra inicial a ser usada
   const navigate = useNavigate()
-
+  
   useEffect(() => {
     if (palavra && indice < palavra.length) {
       const letra = palavra[indice];
@@ -25,6 +25,7 @@ export const AplicaçãoProvider = ({ children }) => {
   }, [indice, palavra]);
 
 
+
   
 
   const handlePalavra = (e) => {
@@ -35,8 +36,9 @@ export const AplicaçãoProvider = ({ children }) => {
     if (palavraDigitada.toUpperCase() === palavra.toUpperCase()) {
       alert("Parabéns, palavra correta! Continue com os estudos.");
       // Atualizando o progresso de forma acumulativa
-      navigate("/home");
-      window.location.reload()
+      progresso(10);
+      // navigate("/home");
+      // window.location.reload()
     } else {
       alert("Não foi dessa vez, tente novamente.");
       navigate("/home");
@@ -48,7 +50,6 @@ export const AplicaçãoProvider = ({ children }) => {
     if (letra === letraAtual) {
       setIndice(indice + 1);
       alert("Letra Correta");
-      setProgress(prevProgress => Math.min(prevProgress + 2, 100));
       console.log(progress)
     } else {
       if (vidas > 1) {
@@ -73,6 +74,16 @@ export const AplicaçãoProvider = ({ children }) => {
     }
   };
 
+  const progresso = (value) => {
+    setProgress(progress + value)
+  };
+  
+
+  useEffect(() => {
+    localStorage.setItem('progresso', progress);
+  }, [progress]); // Chama o efeito sempre que o progresso mudar
+  
+
 
   return (
     <AplicacaoContext.Provider
@@ -92,6 +103,7 @@ export const AplicaçãoProvider = ({ children }) => {
         validaPalavra,
         handleLetra,
         handleLoopImage,
+        progresso,
       }}
     >
       {children}

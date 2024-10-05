@@ -17,6 +17,8 @@ function Login () {
 
         if(email === "talkaction@gmail.com" && senha === '123456'){
             navigate('/home')
+        }else{
+            alert("Email ou senha incorreto")
         }
         
         console.log("Email" , email)
