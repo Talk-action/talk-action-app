@@ -36,9 +36,7 @@ export const AplicaçãoProvider = ({ children }) => {
     if (palavraDigitada.toUpperCase() === palavra.toUpperCase()) {
       alert("Parabéns, palavra correta! Continue com os estudos.");
       // Atualizando o progresso de forma acumulativa
-      progresso(10);
-      // navigate("/home");
-      // window.location.reload()
+      navigate("/home");
     } else {
       alert("Não foi dessa vez, tente novamente.");
       navigate("/home");
