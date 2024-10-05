@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProgressCircle.css'; // Estilos opcionais
+import style from '../components/ProgressCircle.module.css'; // Estilos opcionais
 
 const ProgressCircle = ({ size, progress, strokeWidth }) => {
   const radius = (size - strokeWidth) / 2;
@@ -7,7 +7,8 @@ const ProgressCircle = ({ size, progress, strokeWidth }) => {
   const offset = circumference - (progress / 100) * circumference;
 
   return (
-    <svg width={size} height={size} className="progress-circle">
+    <div className={style.container}>
+       <svg width={size} height={size} className="progress-circle">
       <circle
         className="progress-circle__background"
         stroke="#e6e6e6"
@@ -40,6 +41,7 @@ const ProgressCircle = ({ size, progress, strokeWidth }) => {
         {progress}%
       </text>
     </svg>
+    </div>
   );
 };
 

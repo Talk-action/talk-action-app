@@ -1,6 +1,6 @@
 import Header from "../../header/Header";
 import style from '../Alfabeto/Alfabeto.module.css';
-import data from '../../../../public/data/letras';
+import data from '../../../data/letras';
 import { useState } from "react";
 
 function Alfabeto() {
