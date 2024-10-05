@@ -1,5 +1,5 @@
 const letrasComImagens = [
-  { id: '1' ,letra: 'A', link: "../../public/fotos/a.jpg" },
+  { id: '1' ,letra: 'A', link: "/images/a.jpg" },
   { id: '2' ,letra: 'B', link: '../../public/fotos/b.jpg' },
   { id: '3' ,letra: 'C', link: '../../public/fotos/c.jpg' },
   { id: '4' ,letra: 'D', link: '../../public/fotos/d.jpg' },
