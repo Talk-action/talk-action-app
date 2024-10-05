@@ -18,9 +18,9 @@ function App() {
             <Route path="/cadastro" element={<Cadastro />} /> {/* Rota para a página de cadastro */}
             <Route path="/home" element={<Principal />} /> {/* Rota para a página principal */}
             <Route path="/alfabeto" element={<Alfabeto />} /> {/* Rota para a página de alfabetos */}
-            <Route path="/progresso" element={<Progresso />} /> {/* Rota para a página de alfabetos */}
+            <Route path="/progresso" element={<Progresso/>} /> {/* Rota para a página de alfabetos */}
 
-            <Route path="/objetos" element={<Objetos palavraProp={'HOMEM'}/>} /> 
+            <Route path="/objetos" element={<Objetos palavraProp={'CADEIRA'}/>} /> 
 
             <Route path="/objetos/2" element={<Objetos palavraProp={'BOLA'}/>} /> {/* Rota para a página de objetos com prop */}
 

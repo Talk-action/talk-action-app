@@ -15,7 +15,7 @@ function Header(){
             </div>
             <div className={style.navigate}>
                 <Link className={style.link}to={'/home'}> <p>Home</p> </Link>
-                <Link className={style.link} to={'progresso'}> <p>Progresso</p> </Link>
+                <Link className={style.link} to={'/progresso'}> <p>Progresso</p> </Link>
                 <Link className={style.link} to={'/'}>  <p>Configuração</p>
                 </Link>
                
