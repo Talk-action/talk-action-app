@@ -6,16 +6,6 @@ import style from '../components/ProgressCircle.module.css'
 const Progresso = () => {
 
   const progresso = localStorage.getItem("progresso")
-
-  console.log(progresso)
-  
-  // useEffect(() => {
-  //   const progressoArmazenado = localStorage.getItem("progresso");
-  //   if (progressoArmazenado) {
-  //     setNovoProgresso(Number(progressoArmazenado)); // Converte para número
-  //   }
-  // }, []); // Executa apenas na montagem do componente
-
   return (
     <div>
       <Header />
