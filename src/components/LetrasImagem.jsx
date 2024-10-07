@@ -5,7 +5,6 @@ import style from '../Pages/styles/Aplicacao.module.css';
 
 function LetrasImagens({ letraAtual }) {
 
-  console.log(letraAtual)
   return (
    
     <div className={style.letter}>

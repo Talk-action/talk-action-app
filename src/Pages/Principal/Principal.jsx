@@ -3,10 +3,7 @@ import { AplicacaoContext } from '../../context/AplicaçãoProvider';
 import Header from '../header/Header';
 import style from '../Principal/Principal.module.css';
 import wallpaper from '../../assets/alfabeto.avif';
-import att from '../../assets/att.png';
-import coracao from '../../assets/coracao.png';
 import { Link, useNavigate } from 'react-router-dom';
-import Progresso from '../../components/ProgressCircle';
 
 function Principal() {
     const { vidas } = useContext(AplicacaoContext);

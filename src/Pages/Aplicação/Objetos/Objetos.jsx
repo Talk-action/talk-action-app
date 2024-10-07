@@ -12,14 +12,12 @@ function Objetos({ palavraProp }) { // Recebe a palavra como padrão
 
   const embaralharProps = () => {
     const nova = palavraProp.split("").sort(() => Math.random() - 0.5).join('');
-    console.log(nova);
     setPalavraEmbaralhada(nova.split('')); // Armazena como um array de letras
   };
 
   // Define a palavra no estado global ao carregar o componente
   useEffect(() => {
-    setPalavra(palavraProp); // Define a palavra "Homem" no estado do contexto
-    console.log(`A palavra mudou para ${palavraProp}`);
+    setPalavra(palavraProp); // Define a palavra no estado do contexto
     embaralharProps();
   }, [palavraProp]);
 
@@ -38,7 +36,7 @@ function Objetos({ palavraProp }) { // Recebe a palavra como padrão
           <PalavraEmbaralhada letras={palavraEmbaralhada} handleLetra={handleLetra} />
         )}
         {campoTexto && (
-          <CampoDeTexto handlePalavra={handlePalavra} palavraDigitada={palavraDigitada} validaPalavra={validaPalavra}/>
+          <CampoDeTexto handlePalavra={handlePalavra} palavraDigitada={palavraDigitada} validaPalavra={validaPalavra} />
         )}
       </div>
     </div>

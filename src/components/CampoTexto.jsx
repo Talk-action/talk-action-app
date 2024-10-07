@@ -1,7 +1,6 @@
 // CampoDeTexto.js
-import React, { useContext } from 'react';
+import React from 'react';
 import style from '../Pages/styles/Aplicacao.module.css';
-import { AplicacaoContext } from '../context/AplicaçãoProvider';
 
 function CampoDeTexto({ handlePalavra, palavraDigitada, validaPalavra}) {
 
@@ -10,6 +9,8 @@ function CampoDeTexto({ handlePalavra, palavraDigitada, validaPalavra}) {
   const handleClick = () => {
     validaPalavra(); // Chama a função de validação
     progresso(16.6); // Chama a função progresso
+    setPalavraDigitada("rosa")
+    
   };
   return (
     <div className={style.containerInput}>

@@ -12,11 +12,6 @@ function Cadastro () {
 
     const handleSubmit = () =>{
         event.preventDefault();
-        console.log("Nome" , nome)
-        console.log("Sobrenome" , sobrenome)
-        console.log("Email" , email)
-        console.log("Senha" , senha)
-        console.log("Senha" , repetirS)
         if(senha != repetirS){
             alert("Senhas nao conferem")
         }

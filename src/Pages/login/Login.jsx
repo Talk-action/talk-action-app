@@ -20,9 +20,7 @@ function Login () {
         }else{
             alert("Email ou senha incorreto")
         }
-        
-        console.log("Email" , email)
-        console.log("Senha" , senha)
+
 
     }
 
