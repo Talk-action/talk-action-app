@@ -6,7 +6,7 @@ import CampoDeTexto from '../../../components/CampoTexto';
 import LetrasImagens from '../../../components/LetrasImagem';
 import style from '../../styles/Aplicacao.module.css';
 
-function Profissao({ palavraProp }) { // Recebe a palavra como padrão
+function Profissao2({ palavraProp }) { // Recebe a palavra como padrão
   const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, handleLoopImage, indice } = useContext(AplicacaoContext);
   const [palavraEmbaralhada, setPalavraEmbaralhada] = useState([]);
 
@@ -43,7 +43,7 @@ function Profissao({ palavraProp }) { // Recebe a palavra como padrão
   );
 }
 
-export default Profissao;
+export default Profissao2;
 
 
 

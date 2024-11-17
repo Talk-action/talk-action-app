@@ -6,8 +6,8 @@ import CampoDeTexto from '../../../components/CampoTexto';
 import LetrasImagens from '../../../components/LetrasImagem';
 import style from '../../styles/Aplicacao.module.css';
 
-function Profissao({ palavraProp }) { // Recebe a palavra como padrão
-  const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, handleLoopImage, indice } = useContext(AplicacaoContext);
+function Objetos2({ palavraProp }) { // Recebe a palavra como padrão
+  const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, handleLoopImage, indice, progresso } = useContext(AplicacaoContext);
   const [palavraEmbaralhada, setPalavraEmbaralhada] = useState([]);
 
   const embaralharProps = () => {
@@ -17,7 +17,7 @@ function Profissao({ palavraProp }) { // Recebe a palavra como padrão
 
   // Define a palavra no estado global ao carregar o componente
   useEffect(() => {
-    setPalavra(palavraProp); // Define a palavra "Homem" no estado do contexto
+    setPalavra(palavraProp); // Define a palavra no estado do contexto
     embaralharProps();
   }, [palavraProp]);
 
@@ -43,7 +43,4 @@ function Profissao({ palavraProp }) { // Recebe a palavra como padrão
   );
 }
 
-export default Profissao;
-
-
-
+export default Objetos2;
