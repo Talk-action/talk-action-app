@@ -3,6 +3,7 @@ import { AplicacaoContext } from '../../context/AplicaçãoProvider';
 import Header from '../header/Header';
 import style from '../Principal/Principal.module.css';
 import wallpaper from '../../assets/alfabeto.avif';
+import coracao from  '../../assets/coracao.png'
 import { Link, useNavigate } from 'react-router-dom';
 
 function Principal() {
@@ -33,10 +34,9 @@ function Principal() {
                             <img className={style.img} src={wallpaper} alt="Alfabeto" />
                             <p>Letras</p>
                         </div>
-                  
-
+                        
                     <div className={style.letras}>
-                        <img className={style.coracao} src={"https://media.discordapp.net/attachments/1280214314799730761/1291231122990301214/coracao.png?ex=66ff5831&is=66fe06b1&hm=73e804bd832b01c97c6438d5a2996772d42be89ec98335005ff8fc69baa23490&=&format=webp&quality=lossless&width=468&height=468"} alt="Coração" />
+                        <img className={style.coracao} src={coracao} alt="Coração" />
                         <p>{vidas}/5</p>
                     </div>
                 </div>
