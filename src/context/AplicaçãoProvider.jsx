@@ -72,10 +72,6 @@ export const AplicaçãoProvider = ({ children }) => {
   const handleLoopImage = (item) => {
     if (indice < item.length) {
       const nextIndex = indice + 1; // Armazena o próximo índice
-
-      setTimeout(() => {
-        setIndice(nextIndex); // Atualiza o índice para o próximo
-      }, 1000);
     }
   };
 
