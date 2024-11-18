@@ -34,7 +34,12 @@ export const AplicaçãoProvider = ({ children }) => {
   const validaPalavra = () => {
     if (palavraDigitada.toUpperCase() === palavra.toUpperCase()) {
       alert("Parabéns, palavra correta! Continue com os estudos.");
-    
+      
+
+      setTimeout(() => {
+        setCampoTexto(false) 
+        console.log(campoTexto)// Atualiza o índice para o próximo
+      }, 1000);
       // Atualizando o progresso de forma acumulativa
       navigate("/home");
     } else {
