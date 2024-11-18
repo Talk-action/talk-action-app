@@ -7,8 +7,8 @@ import coracao from  '../../assets/coracao.png'
 import { Link, useNavigate } from 'react-router-dom';
 
 function Principal() {
-    const { vidas } = useContext(AplicacaoContext);
-
+    const { vidas , campoTexto } = useContext(AplicacaoContext);
+    console.log(campoTexto)
     const navigate = useNavigate()
 
     const handleSelectChange = (event) => {
