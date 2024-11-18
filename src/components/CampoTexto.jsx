@@ -5,11 +5,14 @@ import {AplicacaoContext} from '../context/AplicaçãoProvider'
 
 function CampoDeTexto({ handlePalavra, palavraDigitada, validaPalavra}) {
 
-  const {progresso} = useContext(AplicacaoContext)
+  const {progresso , setCampoTexto , setPalavraDigitada} = useContext(AplicacaoContext)
 
   const handleClick = () => {
     validaPalavra(); // Chama a função de validação
     progresso(16.6); // Chama a função progresso
+    setCampoTexto(false)
+    setPalavraDigitada(" ")
+    console.log("Tou aqui")
     };
   return (
     <div className={style.containerInput}>

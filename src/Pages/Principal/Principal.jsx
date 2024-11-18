@@ -11,11 +11,15 @@ function Principal() {
 
     const navigate = useNavigate()
 
-    const handleSelect = (e) =>{
-        if(e.target.value){
-            navigate(e.target.value)
+    const handleSelectChange = (event) => {
+        const selectedValue = event.target.value;
+        if (selectedValue) {
+           
+            // A variavel state, armazena a palavra passada no parametro, para ser usada no locale dentro dos componentes em que for chamado
+            navigate(selectedValue.split(" ")[0] , {state : {teste1 : selectedValue.split(" ")[2]}});  // Navega para a URL selecionada
+            
         }
-    }
+    };
 
     return (
         <div>
@@ -42,20 +46,21 @@ function Principal() {
                 </div>
             </Link>
                 <p>Lições</p>
-
+                
                 <div className={style.teste1}>
-                    <select className={style.select}  onChange={handleSelect}>
+                    <select className={style.select}  onChange={handleSelectChange}>
                         <option value="" disabled selected>Escolha uma opção</option>
-                        <option value="/objetos">Objeto 1</option>
-                        <option value="/objetos/2">Objeto 2</option>
-                        <option value="/objetos/3">Objeto 3</option>
+                        {/*COMEÇO A PASSAR 2 PARAMETROS NO SELECT, O PRIMEIRO A ROTA A SER SEGUIDA E O SEGUNDO A PALAVRA A SER USADA PARA CRIAR O JOGO*/}
+                        <option value="/objetos , CELULAR" >Objeto 1</option>
+                        <option value="/objetos/2 , BOLA">Objeto 2</option>
+                        <option value="/objetos , XICARA">Objeto 3</option>
                     </select>
 
-                    <select className={style.select}  onChange={handleSelect}>
+                    <select className={style.select}  onChange={handleSelectChange}>
                         <option value="" disabled selected>Escolha uma opção</option>
-                        <option value="/profissao">Profissao 1</option>
-                        <option value="/profissao/2">Profissao 2</option>
-                        <option value="/profissao/3">Profissao 3</option>
+                        <option value="/profissao , MEDICO">Profissao 1</option>
+                        <option value="/profissao , PROFESSOR">Profissao 2</option>
+                        <option value="/profissao , BARBEIRO">Profissao 3</option>
                     </select>
                 </div>
 

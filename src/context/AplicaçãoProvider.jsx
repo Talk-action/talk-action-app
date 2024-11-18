@@ -26,14 +26,6 @@ export const AplicaçãoProvider = ({ children }) => {
     }
   }, [indice, palavra]);
 
-  useEffect(() =>{
-
-    setTimeout(() => {
-      setCampoTexto(false);
-    }, 15000);
-  })
-
-  
 
   const handlePalavra = (e) => {
     setPalavraDigitada(e.target.value);
@@ -72,6 +64,10 @@ export const AplicaçãoProvider = ({ children }) => {
   const handleLoopImage = (item) => {
     if (indice < item.length) {
       const nextIndex = indice + 1; // Armazena o próximo índice
+
+      setTimeout(() => {
+        setIndice(nextIndex); // Atualiza o índice para o próximo
+      }, 1000);
     }
   };
 
