@@ -4,7 +4,7 @@ import data from '../data/letras';
 import style from '../Pages/styles/Aplicacao.module.css';
 
 function LetrasImagens({ letraAtual }) {
-
+  
   return (
    
     <div className={style.letter}>

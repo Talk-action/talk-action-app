@@ -5,12 +5,9 @@ import Principal from './Pages/Principal/Principal';
 import { AplicaçãoProvider } from './context/AplicaçãoProvider';
 import Alfabeto from './Pages/Aplicação/Alfabeto/Alfabeto';
 import Objetos from './Pages/Aplicação/Objetos/Objetos';
-import Objetos2 from './Pages/Aplicação/Objetos/Objetos2';
-import Objetos3 from './Pages/Aplicação/Objetos/Objetos3'
+
 import Progresso from './Progresso/Progresso';
 import Profissao from './Pages/Aplicação/Profissao/Profissao';
-import Profissao2 from './Pages/Aplicação/Profissao/Profissao2';
-import Profissao3 from './Pages/Aplicação/Profissao/Profissao3';
 
 
 function App() {
@@ -25,18 +22,12 @@ function App() {
             <Route path="/alfabeto" element={<Alfabeto />} /> {/* Rota para a página de alfabetos */}
             <Route path="/progresso" element={<Progresso/>} /> {/* Rota para a página de alfabetos */}
 
-            <Route path="/objetos" element={<Objetos palavraProp={'CADEIRA'}/>} /> 
+            <Route path="/objetos" element={<Objetos/>} /> 
+            <Route path="/objetos/2" element={<Objetos/>} />
 
-            <Route path="/objetos/2" element={<Objetos2 palavraProp={'BOLA'}/>} /> {/* Rota para a página de objetos com prop */}
+            <Route path="/profissao" element={<Profissao/>} /> 
 
-            <Route path="/objetos/3" element={<Objetos3 palavraProp={'XICARA'}/>} /> {/* Rota para a página de objetos com prop */}
-
-            <Route path="/profissao" element={<Profissao palavraProp={'MEDICO'}/>} /> 
-
-            <Route path="/profissao/2" element={<Profissao palavraProp={'PROFESSOR'}/>} /> {/* Rota para a página de Profissao com prop */}
-
-            <Route path="/profissao/3" element={<Profissao palavraProp={'BARBEIRO'}/>} /> {/* Rota para a página de objetos com prop */}
-
+          
           </Routes>
         </AplicaçãoProvider>
       </Router>

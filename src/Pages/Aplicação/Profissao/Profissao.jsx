@@ -5,10 +5,14 @@ import PalavraEmbaralhada from '../../../components/PalavraEmbaralhada';
 import CampoDeTexto from '../../../components/CampoTexto';
 import LetrasImagens from '../../../components/LetrasImagem';
 import style from '../../styles/Aplicacao.module.css';
+import { useLocation } from "react-router-dom";
 
-function Profissao({ palavraProp }) { // Recebe a palavra como padrão
+function Profissao() { // Recebe a palavra como padrão
   const { letraAtual, handleLetra, campoTexto, handlePalavra, validaPalavra, palavraDigitada, setPalavra, handleLoopImage, indice } = useContext(AplicacaoContext);
   const [palavraEmbaralhada, setPalavraEmbaralhada] = useState([]);
+
+  const location = useLocation() //Localiza algo passado como parametro na rota
+  const palavraProp = location.state?.teste1 //Pego a variavel passada dentro do locale
 
   const embaralharProps = () => {
     const nova = palavraProp.split("").sort(() => Math.random() - 0.5).join('');

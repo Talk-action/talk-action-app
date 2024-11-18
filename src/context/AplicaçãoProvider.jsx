@@ -26,14 +26,6 @@ export const AplicaçãoProvider = ({ children }) => {
     }
   }, [indice, palavra]);
 
-  useEffect(() =>{
-
-    setTimeout(() => {
-      setCampoTexto(false);
-    }, 15000);
-  })
-
-  
 
   const handlePalavra = (e) => {
     setPalavraDigitada(e.target.value);
