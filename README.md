@@ -3,7 +3,7 @@
 - Disciplina [FRONT-END FRAMEWORK] - Professor [Dr.Sávio Silva de Almeida] - Instituto: UNINASSAU
 
 # Link do Site
-https://talkaction-app-1jhx.vercel.app/
+https://talk-action-app.vercel.app/
 
 # Sobre o Projeto
 Talk-Action é um aplicativo inovador projetado para tornar o aprendizado da Língua Brasileira de Sinais (Libras) acessível e envolvente para todos. Com uma interface intuitiva e recursos interativos, nosso aplicativo oferece uma abordagem prática e eficiente para aprender sinais básicos, frases úteis e a cultura surda.
